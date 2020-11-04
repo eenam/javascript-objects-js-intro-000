@@ -5,7 +5,7 @@ var playlist = {artistName: 'songTitle'};
 // The function should return the whole playlist.
 function updatePlaylist(playlist, artistName, songTitle) {
   ({}, playlist, {[artistName]: songTitle})
-  return playlist;
+  return playlist
 }
 
 
