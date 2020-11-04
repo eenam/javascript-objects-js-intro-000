@@ -4,7 +4,7 @@ var playlist = {artistName: 'songTitle'};
 // The body of the function should add the song and artist as a key-value pair to the playlist object.
 // The function should return the whole playlist.
 function updatePlaylist(playlist, artistName, songTitle) {
-
+  return Object.assign({}, artistName, songTitle)
 
 }
 
@@ -13,5 +13,5 @@ function updatePlaylist(playlist, artistName, songTitle) {
 // The body of the function should delete the key-value pair from the playlist and return the updated playlist.
 
 function removeFromPlaylist(playlist, artistName) {
-
+  delete playlist.artistName;
 }
